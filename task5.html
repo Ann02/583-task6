@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>I'am a big header!!!</h1>
+        <div id="myDiv">
+            <p>First paragraph</p>
+            <p>Second paragraph</p>
+            <p>Third paragraph</p>
+            <p>Fourth paragraph</p>
+        </div>
+        <ul id="myList">
+            <li>Make</li>
+            <li>me</li>
+            <li>horizontal!</li>
+        </ul>
+        <span>Make me invisible, please!</span>
+        <script>
+            document.querySelector("h1").style.backgroundColor = "LimeGreen";
+            document.querySelector("div").querySelector("p").style.fontWeight = "bold";
+            document.querySelector("div").querySelectorAll("p")[1].style.color = "red";
+            document.querySelector("div").querySelectorAll("p")[2].style.textDecoration = "underline";
+            document.querySelector("div").querySelectorAll("p")[3].style.fontStyle = "oblique";
+            document.querySelector("ul").remove();
+            var d = document.createElement("DIV");
+            d.innerHTML = "Makemehotizontal";
+            document.body.appendChild(d);  
+            document.querySelector("span").remove()
+
+        </script>
+
+</body>
+</html>
